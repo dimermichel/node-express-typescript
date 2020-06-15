@@ -1,6 +1,8 @@
 import express from 'express';
+import {helloWorld} from './routes'
 const app = express();
 
-app.get('/', (req, res) => res.json({message: 'Hello World'}));
-
-app.listen(process.env.PORT || 3000)
+app.get('/', helloWorld);
+const port = process.env.PORT || 3000;
+console.log(`Server running on port: ${port}`)
+app.listen(port)
