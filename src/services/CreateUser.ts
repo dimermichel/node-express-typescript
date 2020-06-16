@@ -1,5 +1,6 @@
 /**
-* Create User: name, email and password
+* Create User: name, email, password and tech
+* tech: title: string and experience: number
 */
 
 interface TechObject {
